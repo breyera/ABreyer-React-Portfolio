@@ -1,38 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  margin-top: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #ffffff;
+  font-size: 18px;
+  padding-top: 55px;
+  padding-bottom: 60px;
+  overflow: visible;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for about section */
+
+#about {
+  /* background-color: ; */
+  margin: 0;
+  border: 0;
+  margin-right: 0;
+  color: #000;
+  padding: 25px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* height: 400px; */
+  /* width: 100%; */
+  /* padding: 0 24px;
+  max-width: 1100px; */
+}
+
+.about-cont {
+  margin-top: 3rem;
+}
+
+.details,
+table {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+}
+
+.h2card {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+#hr1 {
+  display: none;
+}
+
+/* Adjusted table background color */
+#table-style {
+  /* background-color: ; */
+  color: #000;
+}
+
+#responsBrk {
+  color: #000;
+}
+
+/* Styling for portfolio section */
+#portfolio {
+  padding-top: 60px;
+  /* color: ; */
+}
+
+.iconPort {
+  /* color: ; */
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.iconPort:hover {
+  /* color: ; */
+  font-size: 1.7em;
+}
+
+/* Sets hover postion for website link on portfolio thumbnails */
+.overlayHolder {
+  position: relative;
+}
+
+/* Styles overlay for link to website */
+.img-overlay {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 50px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.img-overlay p:first-child {
+  padding-bottom: 2rem;
+}
+
+.img-thumb {
+  display: block;
+  width: 100%;
+  height: 275px;
+}
+
+.overlayHolder:hover .img-overlay {
+  opacity: 1;
+}
+
+/* Styling for connect section */
+#connect {
+  /* background-color: ; */
+  margin: 0;
+  border: 0;
+  /* color: ; */
+}
+
+h5 {
+  color: #ffffff;
+}
+
+.copyright {
+  padding: 110px;
+}
+
+.connect-rule {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  border: 0;
+  border-top: 2px solid rgb(255, 208, 0);
+}
+
+.link-connect {
+  /* color: ; */
+  font-size: 4em;
+  line-height: 1em;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+.link-connect:hover {
+  /* color: ; */
+  font-size: 4em;
+  line-height: 1em;
+  padding: 0.5rem;
+}
+
+#footer {
+  /* background-color:;  */
+  text-align: center;
+  padding-right: 10px;
+  list-style-type: none;
+  margin: 0%;
+}
+
+.footer-padding {
+  margin-left: 20px;
+}
+
+/* Styles anchor links in footer */
+.git,
+.link {
   color: white;
+  font-size: 3.3em;
+  line-height: 1em;
+  padding: 0.3rem;
+  margin-right: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.git:hover,
+.link:hover {
+  color: rgb(61, 3, 61);
+  font-size: 3.3em;
+  line-height: 1em;
+  padding: 0.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  /* provides a break in about section between columns */
+  #responsBrk {
+    padding-top: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #about {
+    padding: 10px;
+    padding-top: 0px;
+  }
+
+  .link-connect {
+    margin-right: 10px;
+  }
+
+  .link {
+    margin-right: 10px;
+  }
+
+  .img-overlay p:first-child {
+    padding-bottom: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #about {
+    padding: 0.2rem;
+  }
+
+  .about-cont {
+    margin-top: 0rem;
   }
 }

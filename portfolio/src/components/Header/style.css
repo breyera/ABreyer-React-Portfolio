@@ -37,7 +37,7 @@ hr {
 
 @media screen and (max-width: 400px) {
   .header-img {
-    background: url(../../images/IMG_6321.jpg) no-repeat;
+    background: url(../../images/profile-pic.jpg) no-repeat;
     background-size: cover;
     height: 50vh;
     margin: auto;
