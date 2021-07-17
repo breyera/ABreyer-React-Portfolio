@@ -60,6 +60,7 @@ const projects = [
     id: 6,
     title: "Ecommerce",
     href: "https://github.com/breyera/ecommerce",
+    githref: "https://github.com/breyera/ecommerce",
     image: ecommerce,
     description:
       "Command-line application that lets users manage a e-commerce back end.",

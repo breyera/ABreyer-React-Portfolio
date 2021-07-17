@@ -5,6 +5,11 @@
   font-family: sans-serif;
 }
 
+.wrapper {
+  overflow: hidden;
+  background: #e3e8eb;
+}
+
 .App {
   text-align: center;
 }
@@ -67,7 +72,7 @@ h2 {
   color: #000;
 }
 
-#responsBrk {
+#response {
   color: #000;
 }
 
@@ -134,11 +139,13 @@ h2 {
 }
 
 h5 {
-  color: #ffffff;
+  color: #000;
+  opacity: 0.7;
 }
 
 .copyright {
-  padding: 110px;
+  margin: 2rem 0;
+  padding: 1rem;
 }
 
 .connect-rule {
@@ -147,7 +154,7 @@ h5 {
   margin-right: 10rem;
   margin-left: 10rem;
   border: 0;
-  border-top: 2px solid rgb(255, 208, 0);
+  border-top: 2px solid #754955;
 }
 
 .link-connect {
@@ -189,7 +196,7 @@ h5 {
 
 .git:hover,
 .link:hover {
-  color: rgb(61, 3, 61);
+  color: #754955;
   font-size: 3.3em;
   line-height: 1em;
   padding: 0.3rem;
@@ -226,5 +233,13 @@ h5 {
 
   .about-cont {
     margin-top: 0rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    margin: 0 1rem;
   }
 }

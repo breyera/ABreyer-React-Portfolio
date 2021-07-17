@@ -5,6 +5,7 @@ import About from "../../pages/About";
 import Connect from "../../pages/Connect";
 import Portfolio from "../../pages/Portfolio";
 import Footer from "../Footer";
+import "./style.css";
 
 function Wrapper(props) {
   return (

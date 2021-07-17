@@ -7,7 +7,7 @@ import ReactTooltip from "react-tooltip";
 function Connect() {
   return (
     <div id="connect">
-      <div className="row mt-5 pt-3">
+      <div className="row pt-3">
         <div className="col-md-6 mx-auto">
           <div className="card card-body">
             <h2 className="card-title h2card">Connect With Me</h2>

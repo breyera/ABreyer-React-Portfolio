@@ -32,7 +32,7 @@ function About() {
         </div>
         <br />
 
-        <div className="col-md-4 mx-auto" id="responsBrk">
+        <div className="col-md-4 mx-auto" id="response">
           <h2>Skills</h2>
           <br />
           <div className="page-header d-flex justify-center">
